@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jasa  design</title>
+    <title>jasa design</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="query" href="1.html">
 </head>
 <body>
     <header class="header">
@@ -30,7 +31,6 @@
         <h1>Manipulasi</h1>
         <img src="daus.jpg" alt="contoh" width="50%" height="auto" class="contohdesain">
         <h1>Color Grading</h1>
-
     </header>
     <footer>
         <div>
@@ -38,6 +38,38 @@
         </div>
         &copy;jasadesign2023
     </footer>
-    
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Skrip jQuery 1 -->
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                alert("Text: " + $("#test").text());
+            });
+            $("#btn2").click(function(){
+                alert("HTML: " + $("#test").html());
+            });
+        });
+    </script>
+
+    <!-- Skrip jQuery 2 -->
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                alert("Value: " + $("#test").val());
+            });
+        });
+    </script>
+
+    <!-- Skrip jQuery 3 -->
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                alert($("#jong").attr("href"));
+            });
+        });
+    </script>
 </body>
 </html>
